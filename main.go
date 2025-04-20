@@ -9,14 +9,14 @@ import (
 
 func main() {
 	// Read entire file
-	content, err := util.ReadFile("/home/dev/repos/wce/certs/certdocs-main/src/content/docs/en/resources/commands/loadCdb/.env")
+	content, err := util.ReadFile("/etc/group")
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("File Content:\n", content)
 
 	// Read file line by line
-	lines, err := util.ReadFileLines("/home/dev/repos/wce/certs/certdocs-main/src/content/docs/en/resources/commands/loadCdb/.env")
+	lines, err := util.ReadFileLines("/etc/group")
 	if err != nil {
 		log.Fatal(err)
 	}
